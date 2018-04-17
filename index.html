@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Palindrome </title>
+    <link href="styles.css" rel="stylesheet" />
+
+</head>
+
+<body id="body">
+    <h1>Palindrome Identifier App</h1>
+    <h2> Enter a word or phrase to check whether it is a palindrome.</h2>
+    <p> A palindrome is a word/phrase that reads the same backwards and forwards. </p>
+    <hr>
+    <form name="palinForm" method="POST">
+
+
+
+        Enter your word here:
+        <input class="input" type="text" name="inputWord">
+
+
+        <input id="main" type="button" name="doIt" value="Process word" onclick="palinIdentifier();"> &nbsp;
+
+        <br> See your result here: &nbsp;&nbsp;
+        <input type="text" name="outputWord">
+
+        <input  id="display" type="button" name="viewResults" value="View Last 5 Inputs">
+
+        
+
+        <div id ="lastInputs">
+
+             
+
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
